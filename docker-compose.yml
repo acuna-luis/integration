@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  backend:
+    image: luisacuna/seniority-spring
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+  db:
+    image: luisacuna/seniority-db
+
